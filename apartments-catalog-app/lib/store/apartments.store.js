@@ -40,9 +40,9 @@ export const useApartmentStore = create((set) => ({
         }
       }
       const res = await api.post("/apartments", fd);
-      set((state) => ({
-        apartments: [...state.apartments, res.data],
-      }));
+      // set((state) => ({
+      //   apartments: [...state.apartments, res.data],
+      // }));
     } catch (error) {
       console.error(error);
       set({ error: "Failed to add apartment" });

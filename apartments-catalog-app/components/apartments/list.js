@@ -39,11 +39,17 @@ export default function ApartmentsList() {
       {error && <p>{error}</p>}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
         {apartments.map((apartment) => (
-          <Link key={apartment.id} href={`/apartments/${apartment.id}`}>
+          <Link
+            // className=" h-80 w-80"
+            key={apartment.id}
+            href={`/apartments/${apartment.id}`}
+          >
             <Card className="py-4">
               <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                 <Image
                   alt="Card background"
+                  width={200}
+                  height={200}
                   className="object-cover rounded-xl w-full"
                   src={apartment.images[0]}
                 />

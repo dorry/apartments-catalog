@@ -1,0 +1,12 @@
+{
+    "name": "apartments-catalog",
+    "version": "1.0.0",
+    "description": "A simple project",
+    "scripts": {
+        "start": "cd apartments-catalog-service && npm i && cd ../apartments-catalog-app && npm i && cd .. && docker-compose up"
+    },
+    "author": "Alley ElDorry",
+    "license": "ISC",
+    "dependencies": {},
+    "devDependencies": {}
+}

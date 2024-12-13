@@ -17,13 +17,13 @@ import { useApartmentStore } from "@/lib/store/apartments.store";
 export default function CreateModal({ isOpen, onOpenChange }) {
   const { postApartment, error, setError } = useApartmentStore();
   const [formData, setFormData] = useState({
-    name: "asdasda",
-    number: "123123",
-    size: 12312,
-    price: "12312",
-    project: "asdasd",
-    description: "asdasd",
-    address: "asdas",
+    name: "",
+    number: "",
+    size: "",
+    price: "",
+    project: "",
+    description: "",
+    address: "",
     images: [],
   });
 
@@ -43,6 +43,7 @@ export default function CreateModal({ isOpen, onOpenChange }) {
     e.preventDefault();
     onOpenChange(false);
     await postApartment(formData);
+    resetState();
   };
 
   const resetState = () => {
