@@ -18,6 +18,8 @@ npm run start
 
 - The front end of this project is built using NextJS. It provides a simple web app for users to view and add apartments
 
+- Go to http://localhost:3000
+
 ### Backend
 
 - The backend of this project is built using NestJS. It provides a RESTful API for managing apartment listings. The backend interacts with MongoDB for data storage and Minio for handling image uploads and storage.

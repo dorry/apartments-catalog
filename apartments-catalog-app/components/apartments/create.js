@@ -57,8 +57,6 @@ export default function CreateModal({ isOpen, onOpenChange }) {
       address: "",
       images: [],
     });
-
-    setError();
   };
 
   return (
